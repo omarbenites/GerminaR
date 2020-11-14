@@ -2,7 +2,8 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
+  GerminaQuant: GerminaQuant.html
   GerminaR: GerminaR.html
-  coding: coding.html
-last_built: 2020-11-14T18:50Z
+  intro: intro.html
+last_built: 2020-11-14T19:48Z
 

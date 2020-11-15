@@ -359,26 +359,11 @@
 <span class="co"># Prosopis data set processed</span>
 
 <span class="va">gsm</span> <span class="op">%&gt;%</span> 
-   <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu">where</span><span class="op">(</span><span class="va">is.numeric</span><span class="op">)</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">.</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> 
    <span class="fu">kable</span><span class="op">(</span>caption <span class="op">=</span> <span class="st">"Function ger_summary performe ten germination indices"</span><span class="op">)</span></code></pre></div>
 <table class="table">
 <caption>Function ger_summary performe ten germination indices</caption>
-<colgroup>
-<col width="3%">
-<col width="4%">
-<col width="4%">
-<col width="5%">
-<col width="3%">
-<col width="3%">
-<col width="4%">
-<col width="9%">
-<col width="9%">
-<col width="9%">
-<col width="9%">
-<col width="9%">
-<col width="9%">
-<col width="8%">
-</colgroup>
 <thead><tr class="header">
 <th align="left">rep</th>
 <th align="left">nacl</th>
@@ -404,13 +389,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.28</td>
-<td align="right">0.7812500</td>
-<td align="right">78.12500</td>
-<td align="right">0.9461447</td>
-<td align="right">0.6302041</td>
-<td align="right">0.3281633</td>
-<td align="right">0.5728554</td>
-<td align="right">44.75433</td>
+<td align="right">0.78</td>
+<td align="right">78.12</td>
+<td align="right">0.95</td>
+<td align="right">0.63</td>
+<td align="right">0.33</td>
+<td align="right">0.57</td>
+<td align="right">44.75</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -420,13 +405,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.22</td>
-<td align="right">0.8196721</td>
-<td align="right">81.96721</td>
-<td align="right">0.8157272</td>
-<td align="right">0.6661224</td>
-<td align="right">0.2159184</td>
-<td align="right">0.4646702</td>
-<td align="right">38.08772</td>
+<td align="right">0.82</td>
+<td align="right">81.97</td>
+<td align="right">0.82</td>
+<td align="right">0.67</td>
+<td align="right">0.22</td>
+<td align="right">0.46</td>
+<td align="right">38.09</td>
 </tr>
 <tr class="odd">
 <td align="left">3</td>
@@ -436,13 +421,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.32</td>
-<td align="right">0.7575758</td>
-<td align="right">75.75758</td>
-<td align="right">0.9043815</td>
-<td align="right">0.5559184</td>
-<td align="right">0.2220408</td>
-<td align="right">0.4712121</td>
-<td align="right">35.69788</td>
+<td align="right">0.76</td>
+<td align="right">75.76</td>
+<td align="right">0.90</td>
+<td align="right">0.56</td>
+<td align="right">0.22</td>
+<td align="right">0.47</td>
+<td align="right">35.70</td>
 </tr>
 <tr class="even">
 <td align="left">4</td>
@@ -452,13 +437,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.14</td>
-<td align="right">0.8771930</td>
-<td align="right">87.71930</td>
-<td align="right">0.5842388</td>
-<td align="right">0.7542857</td>
-<td align="right">0.1228571</td>
-<td align="right">0.3505098</td>
-<td align="right">30.74648</td>
+<td align="right">0.88</td>
+<td align="right">87.72</td>
+<td align="right">0.58</td>
+<td align="right">0.75</td>
+<td align="right">0.12</td>
+<td align="right">0.35</td>
+<td align="right">30.75</td>
 </tr>
 <tr class="odd">
 <td align="left">1</td>
@@ -468,13 +453,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.04</td>
-<td align="right">0.9615385</td>
-<td align="right">96.15385</td>
-<td align="right">0.2422922</td>
-<td align="right">0.9216327</td>
-<td align="right">0.0391837</td>
-<td align="right">0.1979487</td>
-<td align="right">19.03353</td>
+<td align="right">0.96</td>
+<td align="right">96.15</td>
+<td align="right">0.24</td>
+<td align="right">0.92</td>
+<td align="right">0.04</td>
+<td align="right">0.20</td>
+<td align="right">19.03</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -484,13 +469,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.06</td>
-<td align="right">0.9433962</td>
-<td align="right">94.33962</td>
-<td align="right">0.3274449</td>
-<td align="right">0.8848980</td>
-<td align="right">0.0575510</td>
-<td align="right">0.2398979</td>
-<td align="right">22.63188</td>
+<td align="right">0.94</td>
+<td align="right">94.34</td>
+<td align="right">0.33</td>
+<td align="right">0.88</td>
+<td align="right">0.06</td>
+<td align="right">0.24</td>
+<td align="right">22.63</td>
 </tr>
 <tr class="odd">
 <td align="left">3</td>
@@ -500,13 +485,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.00</td>
-<td align="right">1.0000000</td>
-<td align="right">100.00000</td>
-<td align="right">0.0000000</td>
-<td align="right">1.0000000</td>
-<td align="right">0.0000000</td>
-<td align="right">0.0000000</td>
-<td align="right">0.00000</td>
+<td align="right">1.00</td>
+<td align="right">100.00</td>
+<td align="right">0.00</td>
+<td align="right">1.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
 </tr>
 <tr class="even">
 <td align="left">4</td>
@@ -516,13 +501,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.02</td>
-<td align="right">0.9803922</td>
-<td align="right">98.03922</td>
-<td align="right">0.1414405</td>
-<td align="right">0.9600000</td>
-<td align="right">0.0200000</td>
-<td align="right">0.1414214</td>
-<td align="right">13.86484</td>
+<td align="right">0.98</td>
+<td align="right">98.04</td>
+<td align="right">0.14</td>
+<td align="right">0.96</td>
+<td align="right">0.02</td>
+<td align="right">0.14</td>
+<td align="right">13.86</td>
 </tr>
 <tr class="odd">
 <td align="left">1</td>
@@ -532,13 +517,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.90</td>
-<td align="right">0.5263158</td>
-<td align="right">52.63158</td>
-<td align="right">1.0844751</td>
-<td align="right">0.5812245</td>
-<td align="right">0.3775510</td>
-<td align="right">0.6144518</td>
-<td align="right">32.33957</td>
+<td align="right">0.53</td>
+<td align="right">52.63</td>
+<td align="right">1.08</td>
+<td align="right">0.58</td>
+<td align="right">0.38</td>
+<td align="right">0.61</td>
+<td align="right">32.34</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -548,13 +533,13 @@
 <td align="right">50</td>
 <td align="right">100</td>
 <td align="right">1.70</td>
-<td align="right">0.5882353</td>
-<td align="right">58.82353</td>
-<td align="right">1.1985488</td>
-<td align="right">0.4800000</td>
-<td align="right">0.3775510</td>
-<td align="right">0.6144518</td>
-<td align="right">36.14422</td>
+<td align="right">0.59</td>
+<td align="right">58.82</td>
+<td align="right">1.20</td>
+<td align="right">0.48</td>
+<td align="right">0.38</td>
+<td align="right">0.61</td>
+<td align="right">36.14</td>
 </tr>
 </tbody>
 </table>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • GerminaR</title>
+<title>Web table — webTable • GerminaR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -52,7 +52,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Web table — webTable" />
+<meta property="og:description" content="Web table" />
 <meta property="og:image" content="https://flavjack.github.io/GerminaR/reference/figures/logo.png" />
 
 
@@ -82,7 +83,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -174,162 +175,57 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Web table</h1>
+    <small class="dont-index">Source: <a href='https://github.com/flavjack/germinar/blob/master/R/webTable.R'><code>R/webTable.R</code></a></small>
+    <div class="hidden name"><code>webTable.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Web table</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>webTable</span><span class='op'>(</span>
+  <span class='va'>data</span>,
+  caption <span class='op'>=</span> <span class='cn'>NULL</span>,
+  digits <span class='op'>=</span> <span class='fl'>3</span>,
+  rnames <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  buttons <span class='op'>=</span> <span class='cn'>NULL</span>,
+  file_name <span class='op'>=</span> <span class='cn'>NULL</span>
+<span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="GerminaQuant.html">GerminaQuant()</a></code> </p>
-        </td>
-        <td><p>GerminaQuant for R</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="fplot.html">fplot()</a></code> </p>
-        </td>
-        <td><p>Plot line or bar graphic</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_ASG.html">ger_ASG()</a></code> </p>
-        </td>
-        <td><p>ArcSin of Germination Percentage</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_CVG.html">ger_CVG()</a></code> </p>
-        </td>
-        <td><p>Coefficient of Variance of the Mean Germination Time</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_GRP.html">ger_GRP()</a></code> </p>
-        </td>
-        <td><p>Germination Seed Percentage</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_GRS.html">ger_GRS()</a></code> </p>
-        </td>
-        <td><p>Germinated Seed Number</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_GSP.html">ger_GSP()</a></code> </p>
-        </td>
-        <td><p>Germination Speed</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_MGR.html">ger_MGR()</a></code> </p>
-        </td>
-        <td><p>Mean Germination Rate</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_MGT.html">ger_MGT()</a></code> </p>
-        </td>
-        <td><p>Mean Germination Time</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_SDG.html">ger_SDG()</a></code> </p>
-        </td>
-        <td><p>Standard deviation of the Mean Germination Time</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_SYN.html">ger_SYN()</a></code> </p>
-        </td>
-        <td><p>Germination Synchronization Index</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_UNC.html">ger_UNC()</a></code> </p>
-        </td>
-        <td><p>Germination Uncertainty</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_VGT.html">ger_VGT()</a></code> </p>
-        </td>
-        <td><p>Variance of the Mean Germination Time</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_boxp.html">ger_boxp()</a></code> </p>
-        </td>
-        <td><p>Boxplot graphic</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_intime.html">ger_intime()</a></code> </p>
-        </td>
-        <td><p>Cumulative sum of germination by period of time for line graphic</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_summary.html">ger_summary()</a></code> </p>
-        </td>
-        <td><p>Summary of Germination indices</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ger_testcomp.html">ger_testcomp()</a></code> </p>
-        </td>
-        <td><p>Multiple comparison test</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="osmp.html">osmp()</a></code> </p>
-        </td>
-        <td><p>Osmotic potential calculator</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="prosopis.html">prosopis</a></code> </p>
-        </td>
-        <td><p>Germination under different osmotic potentials and temperatures.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="rep_row.html">rep_row()</a></code> </p>
-        </td>
-        <td><p>Repeated Rows in a data matrix</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="webTable.html">webTable()</a></code> </p>
-        </td>
-        <td><p>Web table</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>data</th>
+      <td><p>Dataset.</p></td>
+    </tr>
+    <tr>
+      <th>caption</th>
+      <td><p>Title for the table.</p></td>
+    </tr>
+    <tr>
+      <th>digits</th>
+      <td><p>Digits number in the table exported.</p></td>
+    </tr>
+    <tr>
+      <th>rnames</th>
+      <td><p>Row names.</p></td>
+    </tr>
+    <tr>
+      <th>buttons</th>
+      <td><p>Buttons: "excel", "copy" or "none". Default c("excel", "copy")</p></td>
+    </tr>
+    <tr>
+      <th>file_name</th>
+      <td><p>Excel file name</p></td>
+    </tr>
     </table>
-  </div>
 
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
